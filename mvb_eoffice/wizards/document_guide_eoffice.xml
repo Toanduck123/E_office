@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="document_guide_eoffice_view_form" model="ir.ui.view">
+            <field name="name">Tài liệu Hướng dẫn</field>
+            <field name="model">document.guide.eoffice</field>
+            <field name="arch" type="xml">
+                <form string="Tài liệu Hướng dẫn"
+                      class="interface_background">
+                    <sheet>
+                        <div class="container" style="font-family:Times New Roman; font-size: 20px; ">
+                            <p style="text-align: center;">
+                                <strong>HƯỚNG DẪN SỬ DỤNG PHÂN HỆ QUẢN LÝ VĂN BẢN</strong>
+                            </p>
+                            <ol>
+                                <strong>1. Mục đích</strong>
+                            </ol>
+                            <p>Phân hệ quản lý văn bản được xây dựng nhằm mục đích tin học hóa, tự động hóa các hoạt
+                                động trong công tác quản lý văn bản, giúp cho việc tiếp nhận, phân công, xử lý, lưu trữ
+                                văn bản, tìm kiếm thông tin trực tiếp trên môi trường mạng internet thông qua cổng nội
+                                bộ trên website của Công ty
+                            </p>
+                            <ol>
+                                <strong>2. Chức năng chính</strong>
+                            </ol>
+                            <ul>
+                                <li>Tạo văn bản: Hỗ trợ người dùng tạo văn bản đi, văn bản đến, văn bản dự thảo và xin ý
+                                    kiến xử lý
+                                </li>
+                                <li>Xử lý văn bản: Hỗ trợ người dùng tiếp nhận, xử lý, phân phối các văn bản được gửi
+                                    tới mình
+                                </li>
+                                <li>Tìm kiếm văn bản: Hỗ trợ người dùng tìm kiếm nhanh chóng văn bản theo các tiêu chí
+                                    đặt ra
+                                </li>
+                            </ul>
+                            <ol>
+                                <strong>3. Hướng dẫn sử dụng đối với tài khoản Văn thư</strong>
+                                <ol>
+                                    3.1 Tạo văn bản đến
+                                </ol>
+                            </ol>
+                            <p>Chức năng này cho phép Văn thư Công ty nhập văn bản đến trên hệ thống. Khi có một văn bản
+                                đến Công ty, Văn thư sau khi tiến hành scan văn bản thì đăng tải lên hệ thống theo các
+                                bước như sau:
+                            </p>
+                            <ul>
+                                <li><strong>Bước 1</strong>: Trên màn hình giao diện hệ thống, Văn thư chọn
+                                    <strong>“Quản lý VB điều hành” -&gt; “Quản lý văn bản đến” -&gt; “Văn bản đến đang
+                                        chờ xử lý” -&gt;“Tạo”
+                                    </strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh1.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 2:</strong>Văn thư tiến hành nhập các trường thông tin về văn bản tại
+                                    trường<strong>“Thông tin chung” -&gt;</strong>sau khi nhập xong nhấn
+                                    <strong>“Lưu”</strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh3.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 3:</strong>Văn thư tiến hành đính kèm văn bản đến bằng cách nhấn vào
+                                    nút
+                                    <strong>“Đính kèm”</strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh3a.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 4:</strong>Văn thư xin ý kiến chỉ đạo của Giám đốc Công ty bằng cách
+                                    chọn <strong>“Xin ý kiến”</strong> và nhập nội dung xin ý kiến vào <strong>“Nội
+                                        dung”;</strong>tại đây<strong></strong>hệ thống tự động chọn tài khoản Giám đốc
+                                    và Chánh Văn phòng để gửi
+                                    <strong></strong>
+                                </li>
+                                <p>
+                                    <b>Nút xin ý kiến</b>
+                                </p>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh2.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+
+                                <p>Cửa sổ Nhập nội dung</p>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh4.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li>
+                                    <strong>Bước 5:</strong>
+                                    Văn thư chọn <strong>“Gửi”</strong> -&gt; <strong>“Lưu”</strong> để hoàn tất việc
+                                    nhập và xin ý kiến chỉ đạo văn bản đến
+                                    <ol>
+                                        3.2. Xử lý văn bản đến
+                                    </ol>
+                                </li>
+                            </ul>
+                            <p>Chức năng này cho phép Văn thư Công ty chuyển nội dung ý kiến chỉ đạo của Giám đốc tới
+                                các nhân sự khác trong Công ty. Căn cứ ý kiến chỉ đạo phân phối văn bản của Giám đốc,
+                                Văn thư tiến hành theo các bước như sau:
+                            </p>
+                            <ul>
+                                <li><strong>Bước 1</strong>: Trên màn hình giao diện hệ thống, chọn
+                                    <strong>“Quản lý VBĐH” -&gt; “Bảng tổng hợp” -&gt; “Văn bản đến” -&gt; “Chưa xử
+                                        lý”
+                                    </strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh5.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 2:</strong>Văn thư chọn văn bản đến chưa xử lý và xem nội dung chỉ đạo
+                                    phân phối văn bản của Giám đốc trong <strong>“Quá trình xử lý”</strong> . Sau đó,
+                                    nhấn vào nút <strong>“Chuyển xử lý”</strong>để phân phối văn bản theo chỉ đạo của
+                                    Giám đốc
+                                </li>
+                                <li>
+                                    <strong>Bước 3:</strong>
+                                    Văn thư tích vào<strong>“Người xử lý chính”</strong>,<strong></strong>chọn<strong>
+                                    “Chọn thêm”</strong>,<strong></strong>tìm kiếm và tích vào tài khoản của người xử lý
+                                    chính. Trong trường hợp có người phối hợp xử lý, người theo dõi văn bản, văn thư
+                                    thực hiện tương tự như đối với người xử lý chính
+                                </li>
+                                <li>
+                                    <strong>Bước 4:</strong>
+                                    Văn thư chọn <strong>“Gửi”</strong> để hoàn tất việc chuyển ý kiến chỉ đạo của Giám
+                                    đốc
+                                    <ol>
+                                        3.3. Phát hành văn bản đi
+                                        <ol>
+                                            <em>3.3.1 Đối với các văn bản đi từ khi sử dụng phần mềm</em>
+                                        </ol>
+                                    </ol>
+                                </li>
+                            </ul>
+                            <p>Chức năng này cho phép Văn thư phát hành văn bản đi trên hệ thống sau khi có ý kiến chỉ
+                                đạo của Giám đốc. Người dùng thực hiện theo các bước sau
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Bước 1:</strong>
+                                    Trên màn hình giao diện Bảng tổng hợp, người dùng chọn <strong>“Chưa xử lý”</strong>trong
+                                    mục
+                                    <strong>“Văn bản đi”</strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh6.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 2:</strong>Người dùng chọn văn bản đi dự thảo đã được duyệt và chọn
+                                    <strong>“Xem chi tiết”</strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh7.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li>
+                                    <strong>Bước 3:</strong>
+                                    Người dùng chọn “Phát hành văn bản” để nhập các thông tin ban hành văn bản
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh8.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 4</strong>: Người dùng nhập các thông tin văn bản đi. Sau khi nhập xong
+                                    nhấn nút <strong>“Lưu” -&gt; “Lưu trữ”</strong>để chuyển Văn bản đi về module Quản
+                                    lý tài liệu
+                                    <br/>
+                                    <img src="/mvb_eoffice/static/src/img/anh9.png" style="width:100%;"/>
+                                    <br/>
+                                    <br/>
+                                    <ul>
+                                        3.3.2. Đối với các văn bản đi trước khi sử dụng phần mềm
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Bước 1:</strong>
+                                    Trên màn hình giao diện hệ thống, chọn
+                                    <strong>“Quản lý VBĐH” -&gt; “Quản lý văn bản đi” -&gt; “Văn bản đi” -&gt; “Tạo”
+                                    </strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh11a.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 2:</strong>Người dùng nhập các thông tin của văn bản tại<strong>“Thông
+                                    tin chung”.</strong>Sau khi nhập xong nhấn<strong>“Lưu” -&gt; “Lưu trữ”</strong>để
+                                    chuyển văn bản đi về module Quản lý tài liệu
+                                    <ol>
+                                        3.4. Tìm kiếm văn bản đến
+                                    </ol>
+                                </li>
+                            </ul>
+                            <p>Chức năng này cho phép Văn thư Công ty tìm kiếm nhanh chóng văn bản đến. Người dùng thực
+                                hiện theo các bước sau:
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Bước 1:</strong>
+                                    Trên màn hình giao diện hệ thống, chọn
+                                    <strong>“Quản lý VBĐH” -&gt; “Quản lý văn bản đến” -&gt; “Tổng hợp văn bản đến”
+                                    </strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh13.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 2:</strong>Người dùng gõ vào thanh tìm kiếm. Tại đây, người dùng có thể
+                                    tìm kiếm theo nhiều trường hợp như
+                                    <strong>“Sổ văn bản”; “Số đến”; “Cơ quan ban hành”; “Số hiệu văn bản”</strong>
+                                </li>
+                                <li><strong>Bước 3:</strong>Người dùng chọn tiêu chí cần tìm kiếm. Màn hình sẽ trả về
+                                    kết quả người dùng cần tìm
+                                    <ol>
+                                        3.5. Tìm kiếm văn bản đi
+                                    </ol>
+                                </li>
+                            </ul>
+                            <p>Chức năng này cho phép Văn thư Công ty tìm kiếm nhanh chóng văn bản đi. Người dùng thực
+                                hiện theo các bước sau:
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Bước 1:</strong>
+                                    Trên màn hình giao diện hệ thống, chọn
+                                    <strong>“Quản lý VBĐH” -&gt; “Quản lý văn bản đi” -&gt; “Tổng hợp văn bản đi”
+                                    </strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh12.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 2:</strong>Người dùng gõ vào thanh tìm kiếm. Tại đây, người dùng có thể
+                                    tìm kiếm theo nhiều trường hợp như
+                                    <strong>“Sổ văn bản”; “Số đến”; “Cơ quan ban hành”; “Số hiệu văn bản”</strong>
+                                </li>
+                                <li><strong>Bước 3:</strong>Người dùng chọn tiêu chí cần tìm kiếm. Màn hình sẽ trả về
+                                    kết quả người dùng cần tìm
+                                </li>
+                            </ul>
+                            <ol>
+                                <strong>4. Hướng dẫn sử dụng đối với tài khoản Chánh Văn phòng</strong>
+                                <ol>
+                                    4.1. Xử lý văn bản đến
+                                </ol>
+                            </ol>
+                            <p>Khi có văn bản đến cần xử lý, phần mềm sẽ tự động thông báo (notify) dưới góc màn hình
+                                máy tính của người dùng, nội dung của thông báo gồm tên người gửi và trích yếu của văn
+                                bản
+                            </p>
+                            <ul>
+                                <li>
+                                    <ol>
+                                        4.2. Xử lý văn bản đi
+                                        4.3. Tìm kiếm văn bản đến
+                                    </ol>
+                                </li>
+                            </ul>
+                            <p>Chức năng này cho phép Chánh Văn phòng tìm kiếm nhanh chóng văn bản đến. Người dùng thực
+                                hiện theo các bước sau:
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Bước 1:</strong>
+                                    Trên màn hình giao diện hệ thống, chọn
+                                    <strong>“Quản lý VBĐH” -&gt; “Quản lý văn bản đến” -&gt; “Tổng hợp văn bản đến”
+                                    </strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh13.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 2:</strong>Người dùng gõ vào thanh tìm kiếm. Tại đây, người dùng có thể
+                                    tìm kiếm theo nhiều trường hợp như
+                                    <strong>“Sổ văn bản”; “Số đến”; “Cơ quan ban hành”; “Số hiệu văn bản”</strong>
+                                </li>
+                                <li><strong>Bước 3:</strong>Người dùng chọn tiêu chí cần tìm kiếm. Màn hình sẽ trả về
+                                    kết quả người dùng cần tìm
+                                    <ol>
+                                        4.4. Tìm kiếm văn bản đi
+                                    </ol>
+                                </li>
+                            </ul>
+                            <p>Chức năng này cho phép Giám đốc tìm kiếm nhanh chóng văn bản đến. Người dùng thực hiện
+                                theo các bước sau:
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Bước 1:</strong>
+                                    Trên màn hình giao diện hệ thống, chọn
+                                    <strong>“Quản lý VBĐH” -&gt; “Quản lý văn bản đi” -&gt; “Tổng hợp văn bản đi”
+                                    </strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh12.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 2:</strong>Người dùng gõ vào thanh tìm kiếm. Tại đây, người dùng có thể
+                                    tìm kiếm theo nhiều trường hợp như <strong>“Sổ văn bản”; “Số đi”; “Cơ quan ban
+                                        hành”; “Số hiệu văn bản” .</strong>Người dùng cũng có thể tìm kiếm nhanh văn bản
+                                    đến theo ngày đến và ngày ban hành ở trên thanh tác vụ
+                                    <strong></strong>
+                                </li>
+                                <li><strong>Bước 3:</strong>Người dùng chọn tiêu chí cần tìm kiếm. Màn hình sẽ trả về
+                                    kết quả người dùng cần tìm
+                                </li>
+                            </ul>
+                            <ol>
+                                <strong>5. Hướng dẫn sử dụng đối với tài khoản Giám đốc</strong>
+                                <ol>
+                                    5.1. Xử lý văn bản đến
+                                </ol>
+                            </ol>
+                            <p>Chức năng này cho phép Giám đốc bút phê ý kiến chỉ đạo đối với văn bản đến. Người dùng
+                                thực hiện theo các bước sau:
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Bước 1:</strong>
+                                    Trên màn hình giao diện Bảng tổng hợp, người dùng chọn <strong>“Chưa xử lý”</strong> trong
+                                    mục
+                                    <strong>“Văn bản đến”</strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh5.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 2:</strong>Người dùng chọn văn bản đến cần xử lý và chọn
+                                    <strong>“Xem chi tiết”</strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh14.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 3</strong>: Người dùng chọn "Trả lời"
+                                    <br/>
+                                    <img src="/mvb_eoffice/static/src/img/anh15.png" style="width:100%;"/>
+                                    <br/>
+                                    <br/>
+                                    <img src="/mvb_eoffice/static/src/img/anh16.png" style="width:100%;"/>
+                                    <br/>
+                                    <br/>
+                                    và nhập nội dung chỉ đạo, sau đó nhấn
+                                    <strong>“Gửi”</strong>
+
+                                    <ol>
+                                        5.2. Xử lý văn bản đi
+                                    </ol>
+                                </li>
+                            </ul>
+                            <p>Chức năng này cho phép Giám đốc phê duyệt văn bản dự thảo trên hệ thống trước khi Văn thư
+                                phát hành văn bản đi. Người dùng thực hiện theo các bước sau
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Bước 1:</strong>
+                                    Trên màn hình giao diện Bảng tổng hợp, người dùng chọn “Chưa xử lý” trong mục “Văn
+                                    bản đi”
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh6.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 2:</strong>Người dùng chọn văn bản đi dự thảo cần xử lý và chọn “Xem
+                                    chi tiết”
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh17.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 3:</strong>Tại bước này có 2 trường hợp xảy ra
+                                </li>
+                                <li><strong>Trường hợp 1:</strong>Văn bản dự thảo chưa đạt, cần chỉnh sửa lại. Người
+                                    dùng lựa chọn <strong>“Không duyệt”,</strong>ghi nội dung không phê duyệt và chọn
+                                    <strong>“Gửi”</strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh18.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh19.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li>Trường hợp 2: Văn bản dự thảo được duyệt, người dùng lựa chọn
+                                    <strong>
+                                        “Duyệt”
+                                        <br/>
+                                        <img src="/mvb_eoffice/static/src/img/anh20a.png" style="width:100%;"/>
+                                        <br/>
+                                        <br/>
+                                    </strong>
+                                    ghi nội dung chỉ đạo và chọn
+                                    <br/>
+                                    <img src="/mvb_eoffice/static/src/img/anh19.png" style="width:100%;"/>
+                                    <br/>
+                                    <br/>
+                                    <strong>“Gửi”</strong>
+                                    <ol>
+                                        5.3. Tìm kiếm văn bản đến
+                                    </ol>
+                                </li>
+                            </ul>
+                            <p>Chức năng này cho phép Giám đốc tìm kiếm nhanh chóng văn bản đến. Người dùng thực hiện
+                                theo các bước sau:
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Bước 1:</strong>
+                                    Trên màn hình giao diện hệ thống, chọn
+                                    <strong>“Quản lý VBĐH” -&gt; “Quản lý văn bản đến” -&gt; “Tổng hợp văn bản đến”
+                                    </strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh22.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 2:</strong>Người dùng gõ vào thanh tìm kiếm. Tại đây, người dùng có thể
+                                    tìm kiếm theo nhiều trường hợp như <strong>“Sổ văn bản”; “Số đến”; “Cơ quan ban
+                                        hành”; “Số hiệu văn bản” .</strong>Người dùng cũng có thể tìm kiếm nhanh văn bản
+                                    đến theo ngày đến và ngày ban hành ở trên thanh tác vụ
+                                    <strong></strong>
+                                </li>
+                                <li><strong>Bước 3:</strong>Người dùng chọn tiêu chí cần tìm kiếm. Màn hình sẽ trả về
+                                    kết quả người dùng cần tìm
+                                    <ol>
+                                        5.4. Tìm kiếm văn bản đi
+                                    </ol>
+                                </li>
+
+                            </ul>
+                            <p>Chức năng này cho phép Giám đốc tìm kiếm nhanh chóng văn bản đến. Người dùng thực hiện
+                                theo các bước sau:
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Bước 1:</strong>
+                                    Trên màn hình giao diện hệ thống, chọn
+                                    <strong>“Quản lý VBĐH” -&gt; “Quản lý văn bản đi” -&gt; “Tổng hợp văn bản đi”
+                                    </strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh20.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 2:</strong>Người dùng gõ vào thanh tìm kiếm. Tại đây, người dùng có thể
+                                    tìm kiếm theo nhiều trường hợp như <strong>“Sổ văn bản”; “Số đi”; “Cơ quan ban
+                                        hành”; “Số hiệu văn bản” .</strong>Người dùng cũng có thể tìm kiếm nhanh văn bản
+                                    đến theo ngày đến và ngày ban hành ở trên thanh tác vụ
+                                    <strong></strong>
+                                </li>
+                                <li><strong>Bước 3:</strong>Người dùng chọn tiêu chí cần tìm kiếm. Màn hình sẽ trả về
+                                    kết quả người dùng cần tìm
+                                </li>
+                            </ul>
+                            <ol>
+                                <li>
+                                    <strong>6. Hướng dẫn sử dụng đối với các tài khoản Trường phòng và Quản đốc</strong>
+                                    <ol>
+                                        6.1. Xử lý văn bản đến
+                                    </ol>
+                                </li>
+                            </ol>
+                            <p>Chức năng này cho phép người dùng thực hiện theo bút phê ý kiến chỉ đạo đối với văn bản
+                                đến. Người dùng thực hiện theo các bước sau:
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Bước 1:</strong>
+                                    Trên màn hình giao diện Bảng tổng hợp, người dùng chọn <strong>“Chưa xử lý”</strong> trong
+                                    mục
+                                    <strong>“Văn bản đến”</strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh5.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 2:</strong>Người dùng chọn văn bản đi dự thảo cần xử lý và chọn
+                                    <strong>“Xem chi tiết”</strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh14.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 3</strong>: Người dùng chọn “Chuyển xử lý” để phân công cho nhân viên
+                                    trong phòng.
+                                    <ol>
+                                        6.2 Văn bản đi dự thảo
+                                    </ol>
+                                </li>
+                            </ul>
+                            <p>Chức năng này cho phép người dùng dự thảo văn bản đi và chuyển xin ý kiến lãnh đạo trên
+                                hệ thống. Người dùng thực hiện thao tác theo các bước sau:
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Bước 1:</strong>
+                                    Trên màn hình giao diện hệ thống, chọn
+                                    <strong>“Quản lý VBĐH” -&gt; “Quản lý văn bản đi” -&gt; “Văn bản đi dự thảo” -&gt;
+                                        “Tạo”
+                                    </strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh24.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 2:</strong>Người dùng nhập các thông tin của văn bản dự thảo và đính
+                                    kèm văn bản<strong>.</strong>Sau khi nhập xong nhấn
+                                    <strong>“Xử lý văn bản”</strong>
+                                </li>
+
+                                <li><strong>Bước 3:</strong>Người dùng nhấn<strong></strong> nhập nội dung chuyển tới
+                                    người dùng khác; sau đó chọn
+                                    <strong>“Chuyển tới”</strong>
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh28.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 4:</strong>Trên danh sách hiển thị, người dùng chọn tài khoản cần
+                                    chuyển, tích chọn tài khoản sau đó nhấn
+                                    <strong>“Chọn”</strong>
+                                </li>
+                                <li><strong>Bước 5:</strong>Người dùng chọn<strong>“Gửi”</strong>để gửi văn bản đi dự
+                                    thảo
+                                </li>
+                                <li><strong>Bước 6:</strong>Người<strong></strong>dùng chọn<strong>“Lưu”</strong>để hoàn
+                                    tất
+                                    <ol>
+                                        6.3 Xử lý văn bản đi
+                                    </ol>
+                                </li>
+                            </ul>
+                            <p>Chức năng này cho phép người dùng xử lý văn bản đi được nhận trên hệ thống Người dùng
+                                thực hiện thao tác theo các bước sau:
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Bước 1:</strong>
+                                    Trên màn hình giao diện Bảng tổng hợp, người dùng chọn <strong>“Chưa xử lý”</strong> trong
+                                    mục
+                                    <strong>“Văn bản đi”</strong>
+                                </li>
+                                <li><strong>Bước 2:</strong>Người dùng chọn văn bản đi dự thảo cần xử lý và chọn
+                                    <strong>“Xem chi tiết”</strong>
+                                </li>
+
+                                <li><strong>Bước 3:</strong>Người dùng<strong></strong>chọn <strong>“Xử lý văn
+                                    bản”</strong>để xử lý
+                                </li>
+                                 <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh27a.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 4:</strong>Người dùng điền nội dung xử lý
+                                </li>
+                                <br/>
+                                <img src="/mvb_eoffice/static/src/img/anh28.png" style="width:100%;"/>
+                                <br/>
+                                <br/>
+                                <li><strong>Bước 5</strong>: Người dùng nhấn<strong>“Chọn thêm”</strong>và lựa chọn tài
+                                    khoản nhận. Sau đó nhấn<strong>“Chọn” -&gt; “Gửi”</strong>để hoàn thành
+                                    <ol>
+                                        6.4 Tìm kiếm văn bản đến
+                                    </ol>
+                                </li>
+                            </ul>
+                            <p>Chức năng này cho phép người dùng tìm kiếm nhanh chóng văn bản đến. Người dùng thực hiện
+                                theo các bước sau:
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Bước 1:</strong>
+                                    Trên màn hình giao diện hệ thống, chọn
+                                    <strong>“Quản lý VBĐH” -&gt; “Quản lý văn bản đến” -&gt; “Tổng hợp văn bản đến”
+                                    </strong>
+                                </li>
+                                <li><strong>Bước 2:</strong>Người dùng gõ vào thanh tìm kiếm. Tại đây, người dùng có thể
+                                    tìm kiếm theo nhiều trường hợp như <strong>“Sổ văn bản”; “Số đến”; “Cơ quan ban
+                                        hành”; “Số hiệu văn bản” .</strong>Người dùng cũng có thể tìm kiếm nhanh văn bản
+                                    đến theo ngày đến và ngày ban hành ở trên thanh tác vụ
+                                    <strong></strong>
+                                </li>
+                                <li><strong>Bước 3:</strong>Người dùng chọn tiêu chí cần tìm kiếm. Màn hình sẽ trả về
+                                    kết quả người dùng cần tìm
+                                    <ol>
+                                        6.5 Tìm kiếm văn bản đi
+                                    </ol>
+                                </li>
+                            </ul>
+                            <p>Chức năng này cho phép người dùng tìm kiếm nhanh chóng văn bản đến. Người dùng thực hiện
+                                theo các bước sau:
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Bước 1:</strong>
+                                    Trên màn hình giao diện hệ thống, chọn
+                                    <strong>“Quản lý VBĐH” -&gt; “Quản lý văn bản đi” -&gt; “Tổng hợp văn bản đi”
+                                    </strong>
+                                </li>
+                                <li><strong>Bước 2:</strong>Người dùng gõ vào thanh tìm kiếm. Tại đây, người dùng có thể
+                                    tìm kiếm theo nhiều trường hợp như <strong>“Sổ văn bản”; “Số đi”; “Cơ quan ban
+                                        hành”; “Số hiệu văn bản” .</strong>Người dùng cũng có thể tìm kiếm nhanh văn bản
+                                    đến theo ngày đến và ngày ban hành ở trên thanh tác vụ
+                                    <strong></strong>
+                                </li>
+                                <li><strong>Bước 3:</strong>Người dùng chọn tiêu chí cần tìm kiếm. Màn hình sẽ trả về
+                                    kết quả người dùng cần tìm
+                                </li>
+                            </ul>
+                        </div>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="document_guide_eoffice_view_action">
+            <field name="name">Tài liệu Hướng dẫn</field>
+            <field name="res_model">document.guide.eoffice</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="document_guide_eoffice_view_form"/>
+            <field name="target">inline</field>
+        </record>
+    </data>
+</odoo>
